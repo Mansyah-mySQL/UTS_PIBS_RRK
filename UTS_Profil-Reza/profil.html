@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Mahasiswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <script>
+  function tampil(menu) {
+    var daftar = ['biodata', 'pendidikan', 'pengalaman', 'keahlian', 'pelatihan'];
+
+    for (var i = 0; i < daftar.length; i++) {
+      document.getElementById(daftar[i]).style.display = 'none';
+    }
+
+    document.getElementById(menu).style.display = 'block';
+  }
+</script>
+
+
+  <header>
+    <img src="foto.jpg" alt="Foto Profil">
+    <h1>Profil Mahasiswa</h1>
+  </header>
+
+  <main>
+    <nav>
+      <a href="#" onclick="tampil('biodata'); return false;">Biodata</a>
+      <a href="#" onclick="tampil('pendidikan'); return false;">Pendidikan</a>
+      <a href="#" onclick="tampil('pengalaman'); return false;">Pengalaman</a>
+      <a href="#" onclick="tampil('keahlian'); return false;">Keahlian</a>
+      <a href="#" onclick="tampil('pelatihan'); return false;">Pelatihan</a>
+    </nav>
+
+<section>
+  <div id="biodata">
+    <h2>Biodata</h2>
+    <p>Nama: [Nama Lengkap]</p>
+    <p>NIM: [NIM]</p>
+    <p>Program Studi: Sistem Informasi</p>
+    <p>Semester: 3</p>
+    <p>Tempat, Tanggal Lahir: [Tempat, Tanggal Lahir]</p>
+    <p>Domisili: [Kota]</p>
+  </div>
+
+  <div id="pendidikan">
+    <h2>Pendidikan</h2>
+    <p>Isi sejarah pendidikan</p>
+  </div>
+
+  <div id="pengalaman">
+    <h2>Pengalaman</h2>
+    <p>Isi pengalaman</p>
+  </div>
+
+  <div id="keahlian">
+    <h2>Keahlian</h2>
+    <p>Isi keahlian</p>
+  </div>
+
+  <div id="pelatihan">
+    <h2>Pelatihan</h2>
+    <p>Isi pelatihan</p>
+  </div>
+</section>
+
+
+    <aside>
+      <h3>Hobi</h3>
+      <p>Musik</p>
+      <p>Game</p>
+      <p>Pemrograman</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Copyright 2026 - Profil Mahasiswa</p>
+  </footer>
+
+</body>
+</html>
